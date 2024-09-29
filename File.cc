@@ -17,19 +17,20 @@ string File::getContents(){
 }
 
 bool File::lessThan( Date& d ){
-    
-    if((date.lessThan(d))){
-        cout << " File Less Than" << endl;
-        return true;
-    } else {
-        return false;
-    }
+ 	if (date.getYear() < d.getYear()) return true;
+	if (date.getYear() > d.getYear()) return false;
+	//years are equal
+	if (date.getMonth() < d.getMonth()) return true;
+	if (date.getMonth() > d.getMonth()) return false;
+	//months are equal
+	return (date.getDay() < d.getDay());   
+
 
 }
 
 void File::print(){
     cout << "File Name --: " << getName() << endl;
-    date.print();
+    Date::date.print();
 }
 
 void File::printContents(){
