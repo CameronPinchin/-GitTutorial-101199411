@@ -34,6 +34,10 @@ void File::print(){
 }
 
 void File::printContents(){
-    cout << "Contents --: " << getContents() << endl;
+    
+    cout << "Name: " << getName() << endl;
+    cout << "Date: " <<;
+    date.print();
+    cout << "Contents: " << getContents() << endl;
 
 }
