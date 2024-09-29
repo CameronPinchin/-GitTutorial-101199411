@@ -93,7 +93,7 @@ void Date::addDays(int num){
 }
 
 void Date::print() {
-	cout << getMonthName()<<" "<< getDay() <<", "<< getYear();
+	cout << getMonthName()<<" "<< getDay() <<", "<< getYear() << endl;
 }
 
 
