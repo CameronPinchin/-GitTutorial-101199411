@@ -30,7 +30,7 @@ bool File::lessThan( Date& d ){
 
 void File::print(){
     cout << "File Name --: " << getName() << endl;
-    Date::date.print();
+    date.print();
 }
 
 void File::printContents(){
