@@ -1,5 +1,5 @@
 #ifndef FILE_H
-#define DATE_H
+#define FILE_H
 
 #include <iostream>
 #include <string>
@@ -25,13 +25,13 @@ class File {
         void printContents();
 
         //Other functions
-        bool lessThan();
+        bool lessThan( Date& d );
 
     private:
 
         string name;
         string content;
-        Date lastModified;
+        Date date;
 
 };
 

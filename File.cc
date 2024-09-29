@@ -16,9 +16,9 @@ string File::getContents(){
     return contents;
 }
 
-bool File::lessThan(){
-
-    if((date.lessThan())){
+bool File::lessThan( Date& d ){
+    
+    if((date.lessThan(d))){
         cout << " File Less Than" << endl;
         return true;
     } else {
