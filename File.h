@@ -1,19 +1,19 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include <iostream>
+
 #include <string>
 #include "Date.h"
 
 using namespace std;
-using namespace Date;
+//using namespace Date;
 
 class File {
 
     public:
 
         //Constructors
-        File(string name, string content, Date& date);
+        File(string name, string contents, Date& date);
         
         //getters
         string getName();
@@ -30,7 +30,7 @@ class File {
     private:
 
         string name;
-        string content;
+        string contents;
         Date date;
 
 };
